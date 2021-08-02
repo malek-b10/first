@@ -1,0 +1,39 @@
+ALGORITHM phrase
+
+VAR
+l: integer;
+
+i;integer;
+p:STRING;
+nm: integer;
+nv: integer;
+
+BEGIN
+if (length.p-1=".") 
+    Read(p);
+    FOR i FROM 0 TO length p STEP 1 DO
+        l:=l+1;
+     END_FOR
+END_IF;
+
+nm=1;
+    FOR i FROM 0 TO length p-1 STEP   DO
+     if p[i]=" "
+     nm= nm+1;
+     END_FOR
+     END_IF
+
+    FOR i FROM 0 TO length.p STEP  DO
+       if(p[i]="a" or p[i]="e" or p[i]="i or p[i]="u" or p[i]="o" or p[i]="y" or p[i]="A" or p[i]="E" or p[i]="I" or p[i]="U" or p[i]="O or p[i]="Y")
+       nv=nv+1;
+    END_FOR
+
+    whrite(l);
+    whrite(nm);
+    whrite(nv);
+
+
+
+    
+
+    
